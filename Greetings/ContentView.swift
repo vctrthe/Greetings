@@ -3,10 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color
-                .black
-                .opacity(0.2)
-                .ignoresSafeArea()
+            BackgroundView()
             
             VStack(alignment: .leading) {
                 TitleView()
