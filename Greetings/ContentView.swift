@@ -1,28 +1,50 @@
 import SwiftUI
-import Playgrounds
 
 struct ContentView: View {
+    let messages: [DataItemModel] = [
+        .init(
+            text: "Hello there!",
+            color: .green
+        ),
+        .init(
+            text: "Welcome to Swift Programming",
+            color: .gray
+        ),
+        .init(
+            text: "Are you ready to,",
+            color: .yellow
+        ),
+        .init(
+            text: "start exploring?",
+            color: .red
+        ),
+        .init(
+            text: "Boom.",
+            color: .purple
+        )
+    ]
+    
     var body: some View {
         VStack(alignment: .leading) {
             TextView(
-                text: "Hello there!",
-                color: .green
+                text: messages[0].text,
+                color: messages[0].color
             )
             TextView(
-                text: "Welcome to Swift Programming",
-                color: .gray
+                text: messages[1].text,
+                color: messages[1].color
             )
             TextView(
-                text: "Are you ready to,",
-                color: .yellow
+                text: messages[2].text,
+                color: messages[2].color
             )
             TextView(
-                text: "start exploring?",
-                color: .red
+                text: messages[3].text,
+                color: messages[3].color
             )
             TextView(
-                text: "Boom.",
-                color: .purple
+                text: messages[4].text,
+                color: messages[4].color
             )
         }
         .padding()
@@ -31,8 +53,4 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-}
-
-#Playground {
-    _ = 1 + 2
 }
