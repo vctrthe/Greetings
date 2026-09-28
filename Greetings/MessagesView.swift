@@ -11,23 +11,23 @@ struct MessagesView: View {
     let messages: [DataItemModel] = [
         .init(
             text: "Hello there!",
-            color: .green
+            color: .myGreen
         ),
         .init(
             text: "Welcome to Swift Programming",
-            color: .gray
+            color: .myGray
         ),
         .init(
             text: "Are you ready to,",
-            color: .yellow
+            color: .myYellow
         ),
         .init(
             text: "start exploring?",
-            color: .red
+            color: .myRed
         ),
         .init(
             text: "Boom.",
-            color: .purple
+            color: .myPurple
         )
     ]
     
