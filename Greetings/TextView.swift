@@ -31,9 +31,7 @@ struct TextView: View {
             )
             .onTapGesture {
                 // Randomly change color
-                withAnimation {
-                    color = colors.randomElement() ?? .red
-                }
+                color = colors.randomElement() ?? .red
             }
     }
 }
